@@ -1,0 +1,15 @@
+<div class='voffset5 col-md-offset-3 col-md-6 col-sm-12'>
+  <div class="panel panel-primary">
+    <div class="panel-heading clearfix">
+      <h4 class="pull-left">Events</h4>
+    </div>
+    <% @events.each do |event| %>
+        <a class="list-group-item" href="/events/<%=event.id%>">
+          <div class="container-fluid">
+            <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
+            <h2 class="event_title"><%= event.title %></h2>
+          </div>
+        </a>
+    <% end %>
+  </div>
+</div>
